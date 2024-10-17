@@ -1,0 +1,66 @@
+.menu{
+    flex-direction: column;
+    gap: 20px;
+    height: 90vh;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(50, 207, 18);
+    
+    
+}
+.menu-bar{
+    display: none;
+}
+.logo-icon{
+    font-size: 26px;
+}
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.menu-list .item{
+    text-decoration: none;
+    color: #000;align-items: center;
+    padding: 10px;
+    border-radius: 12px;transition: 0.5s ease-in-out;
+    font-size: 18px;
+    font-weight: 530;
+    gap: 20px;
+    align-items: center;
+    display: flex;
+}
+.menu-list .item:hover,.active{
+    background: gray !important;
+    color: #fff;
+}
+@media(max-width:768px){
+    .menu-list{
+        position: absolute;
+        display: flex;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .menu-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+        color: rgb(28, 214, 28);
+        cursor: pointer;
+    }
+}

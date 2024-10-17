@@ -1,0 +1,46 @@
+.list-header{
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.list-header h2{
+    color: #000;
+    font-size: 20px;
+}
+.list-header select{
+    border: 1px solid greenyellow;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+}
+.list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.list{
+    display: flex;
+    padding-right: 10px ;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+}
+.dev-detail{
+    display: flex;
+    gap: 20px;
+}
+.dev-detail h2{
+    font-size: 18px;
+}
+.dev-detail img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.list:hover{
+    background: rgb(113, 116, 116);
+    padding: 2px 2px 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
